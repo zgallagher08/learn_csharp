@@ -11,5 +11,13 @@ namespace learn_csharp
 
             Console.WriteLine("Hello, {0}", name);
         }
+
+        void Swap(ref int x, ref int y)
+        {
+            int temp;
+            temp = x;
+            x = y;
+            y = temp;
+        }
     }
 }
