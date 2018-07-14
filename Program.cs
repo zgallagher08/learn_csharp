@@ -41,5 +41,14 @@ namespace learn_csharp
             Console.WriteLine(label + a);
         }
 
+        // Encapsulation - hide details of class
+        // access modifiers: public, private, protected, protected internal.
+        class BankAccount {
+            private double balance = 0;
+            public void Deposit(double n) {
+                balance += n;
+            }
+        }
+
     }
 }
