@@ -50,5 +50,22 @@ namespace learn_csharp
             }
         }
 
+        // Constructors - must have the same name as the class
+
+        // Properties
+        class Person {
+            private string name;
+
+            public string Name {
+                get { return name; }
+                set { name = value; }
+            }
+        }
+
+        // Auto-implemented Properties
+        class Person2 {
+            public string Name { get; set; }
+        }
+
     }
 }
