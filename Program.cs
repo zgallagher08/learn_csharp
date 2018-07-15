@@ -67,5 +67,26 @@ namespace learn_csharp
             public string Name { get; set; }
         }
 
+        // Arrays
+        void Arrays() {
+
+            int[] myArray = new int[8];
+            int[] myArray2 = { 2, 3, 5, 6 };
+
+            // Arrays in loops
+            foreach (int val in myArray) {
+                Console.WriteLine(val);
+            }
+
+            // Multidimensional Arrays
+            double[,] mdArr = new double[3, 4];
+
+            // Array properties
+            Console.WriteLine(myArray2.Length); // 4
+            Console.WriteLine(myArray2.Rank); // 2
+            Console.WriteLine(myArray2.Max()); // 2
+            Console.WriteLine(myArray2.Min()); // 6
+            Console.WriteLine(myArray2.Sum()); // 16
+        }
     }
 }
