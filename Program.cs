@@ -88,5 +88,12 @@ namespace learn_csharp
             Console.WriteLine(myArray2.Min()); // 6
             Console.WriteLine(myArray2.Sum()); // 16
         }
+
+        // Destructors
+        class Dog {
+            ~Dog() {
+               // invoked automatically when an object is destroyed or deleted 
+            }
+        }
     }
 }
