@@ -95,5 +95,19 @@ namespace learn_csharp
                // invoked automatically when an object is destroyed or deleted 
             }
         }
+
+        // Static Classes
+        //
+        // Math.PI
+        // Math.E
+        //
+        // Array.Reverse(arr)
+        // Array.Sort(arr)
+        //
+        // String.Concat(s1, s2)
+        // String.Equals(s1, s2)
+        //
+        // DateTime.Now
+        // DateTime.Today
     }
 }
