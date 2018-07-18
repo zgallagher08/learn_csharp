@@ -109,5 +109,22 @@ namespace learn_csharp
         //
         // DateTime.Now
         // DateTime.Today
+
+        // Operator Overloading
+        class Box {
+            public int Height { get; set; }
+            public int Width { get; set; }
+            public Box(int h, int w) {
+                Height = h;
+                Width = w;
+            }
+        }
+        public static Box operator+(Box a, Box b) {
+            int h = a.Height + b.Height;
+            int w = a.Width + b.Width;
+            Box result = new Box(h, w);
+            return result;
+        }
+        // Box b3 = b1 + b2;
     }
 }
