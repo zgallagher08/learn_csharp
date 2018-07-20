@@ -126,5 +126,19 @@ namespace learn_csharp
             return result;
         }
         // Box b3 = b1 + b2;
+
+        // Inheritance
+        class Animal {
+            public int Legs { get; set; }
+            public int Age { get; set; }
+        }
+        class Dog : Animal {
+            public Dog() {
+                Legs = 4;
+            }
+            public void Bark() {
+                Console.Write('Woof');
+            }
+        }
     }
 }
