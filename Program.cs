@@ -146,5 +146,11 @@ namespace learn_csharp
                 Console.Write('Woof');
             }
         }
+
+        // sealed class modifier
+        sealed class Animal2 {
+            private string Name { get; set; }
+        }
+        // class Dog : Animal2 {} // Error
     }
 }
