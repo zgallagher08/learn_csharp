@@ -131,10 +131,16 @@ namespace learn_csharp
         class Animal {
             public int Legs { get; set; }
             public int Age { get; set; }
+
+            // protected access modifier
+            // very similar to private, but it can be accessed in
+            // the derived classes.
+            protected string Name { get; set; }
         }
         class Dog : Animal {
-            public Dog() {
+            public Dog(string name) {
                 Legs = 4;
+                Name = name;
             }
             public void Bark() {
                 Console.Write('Woof');
