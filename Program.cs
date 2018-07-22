@@ -152,5 +152,23 @@ namespace learn_csharp
             private string Name { get; set; }
         }
         // class Dog : Animal2 {} // Error
+
+        // Polymorphism
+        // One method with different implementations.
+        // use keywords virtual and override
+        class Shape {
+            public virtual void Draw() {
+                Console.Write('Base Draw');
+            }
+        }
+        class Circle : Shape {
+            public override void Draw() {
+                Console.Write('Circle Draw');
+            }
+        }
+        class Rectangle : Shape {
+            public override void Draw() {
+            Console.Write('Rectangle Draw');
+        }
     }
 }
