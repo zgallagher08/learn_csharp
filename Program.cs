@@ -178,5 +178,19 @@ namespace learn_csharp {
             public abstract void Draw();
         }
 
+        // Interfaces
+        // An interface is a completely abstract class
+        // which contains only abstract members.
+        // The interface simply describes what a class
+        // that implements the interface should do.
+        public interface IShape {
+            void Draw();
+        }
+        class Circle2 : IShape {
+            public void Draw() {
+                Console.WriteLine('Circle Draw');
+            }
+        }
+
     }
 }
