@@ -1,7 +1,6 @@
 ﻿using System;
 
-namespace learn_csharp
-{
+namespace learn_csharp {
     class Program {
         static void Main(string[] args) {
             Console.WriteLine("What's your name?");
@@ -167,8 +166,17 @@ namespace learn_csharp
             }
         }
         class Rectangle : Shape {
-            public override void Draw() {
-            Console.Write('Rectangle Draw');
+            public override void Draw()
+            {
+                Console.Write('Rectangle Draw');
+            }
         }
+
+        // Abstract Classes
+        // You cannot create objects of a class containing an abstract method
+        abstract class Shape2 {
+            public abstract void Draw();
+        }
+
     }
 }
