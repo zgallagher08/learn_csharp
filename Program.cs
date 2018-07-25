@@ -192,5 +192,16 @@ namespace learn_csharp {
             }
         }
 
+        // Nested Classes
+        class Car {
+            string name;
+            public Car(string nm) {
+                name = nm;
+                Motor motor = new Motor();
+            }
+            public class Motor {
+                // nested class
+            }
+        }
     }
 }
