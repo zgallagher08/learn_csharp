@@ -203,5 +203,25 @@ namespace learn_csharp {
                 // nested class
             }
         }
+
+        // Structs
+        struct Book {
+            public string title;
+            public double price;
+            public string author;
+        }
+
+        // structs are like classes but cannot
+        // have a constructor without parameters.
+        // They are best suited for small data structures
+        // that are not intended to be modified.
+        struct Point {
+            public int x;
+            public int y;
+            public Point(int x, int y) {
+                this.x = x;
+                this.y = y;
+            }
+        }
     }
 }
