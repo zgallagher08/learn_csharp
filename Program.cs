@@ -223,5 +223,29 @@ namespace learn_csharp {
                 this.y = y;
             }
         }
+
+        // Enums
+        static void EnumExample() {
+            enum Days { Sun, Mon, Tue, Wed, Thu, Fri, Sat };
+
+        // They're often used in switch statements
+            enum TrafficLights { Green, Yellow, Red };
+
+            static void TrafficSignal(enum TrafficLight) {
+                switch (x) {
+                    case TrafficLight.Green:
+                        Console.WriteLine("Go!");
+                        break;
+                    case TrafficLight.Yellow:
+                        Console.WriteLine("Caution!");
+                        break;
+                    case TrafficLight.Red:
+                        Console.WriteLine("Stop!");
+                        break;
+                }
+            }
+        }
+
+
     }
 }
