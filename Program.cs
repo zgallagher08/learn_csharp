@@ -246,6 +246,20 @@ namespace learn_csharp {
             }
         }
 
+        // Exception Handling
+        static void ExceptionHandling() {
+            try {
+                int[] arr = new int[] { 6, 7, 8 };
+                Console.Write(arr[5]);
+            }
+            catch(Exception e) {
+                Console.WriteLine(e.Message);
+            }
+            finally {
+                // will run whether an exception is thrown or not
+            }
+        }
+
 
     }
 }
