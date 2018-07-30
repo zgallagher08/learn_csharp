@@ -260,6 +260,14 @@ namespace learn_csharp {
             }
         }
 
+        // File IO
+        // The System.IO namespace has various classes
+        // that are used for performing operations with files
+        static void ExampleFileIO() {
+            File.WriteAllText('filename.txt', 'some text');
+            string txt = File.ReadAllText('test.txt');
+        }
+
 
     }
 }
