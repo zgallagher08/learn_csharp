@@ -268,6 +268,11 @@ namespace learn_csharp {
             string txt = File.ReadAllText('test.txt');
         }
 
-
+        // Generics
+        static void Swap<T>(ref T a, ref T b) {
+            T temp = a;
+            a = b;
+            b = temp;
+        }
     }
 }
