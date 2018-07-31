@@ -274,5 +274,24 @@ namespace learn_csharp {
             a = b;
             b = temp;
         }
+
+        // Generic Classes
+        class Stack<T> {
+            int index = 0;
+            T[] innerArray = new T[100];
+            public void Push(T item) {
+                innerArray[index++] = item;
+            }
+            public T Pop() {
+                return innerArray[--index];
+            }
+            public T Get(int k) { return innerArray[k]; }
+        }
+
+        Stack<int> intStack = new Stack<int>();
+        Stack<string> strStack = new Stack<string>();
+        Stack<Person> PersonStack = new Stack<Person>();
+
+
     }
 }
