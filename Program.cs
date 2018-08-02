@@ -292,6 +292,16 @@ namespace learn_csharp {
         Stack<string> strStack = new Stack<string>();
         Stack<Person> PersonStack = new Stack<Person>();
 
+        // Collections
+        // contained in the System.Collections.Generic namespace
+        List<string> colors = new List<string>();
+        colors.Add("Blue");
+        colors.Add("Orange");
 
+        // Commonly used generic collection types:
+        // Dictionary<Tkey, TValue>
+        // List<T>
+        // Queue<T>
+        // Stack<T>
     }
 }
